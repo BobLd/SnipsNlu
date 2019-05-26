@@ -86,5 +86,12 @@ Can you make 3 cups of coffee?
         MakeCoffee (61.43%)
                 '3 (Number)', '3', snips/number, number_of_cups @ [13;14]
 ```
+
+TO DO list
+----------
+
+- [x] Load model from zip file
+- [ ] Create `CStringArray` class
+
 License
 -------
