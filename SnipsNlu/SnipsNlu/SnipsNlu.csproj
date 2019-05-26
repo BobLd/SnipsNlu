@@ -10,22 +10,28 @@
     <Authors>BobLd</Authors>
     <Company />
     <Description>Snips NLU C# wrapper library to extract meaning from text.
+References:
 - https://snips.ai/
 - https://github.com/snipsco/snips-nlu</Description>
     <PackageReleaseNotes>Beta version</PackageReleaseNotes>
   </PropertyGroup>
-
+  
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <Folder Include="x64\" />
+	<Folder Include="x86\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="x64\snips_nlu_ffi.dll" Pack="true" PackageCopyToOutput="true" PackagePath="x64">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\snips_nlu_ffi.dll" Pack="true" PackageCopyToOutput="true" PackagePath="x86">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="x64\snips_nlu_ffi.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="x86\snips_nlu_ffi.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
 </Project>
