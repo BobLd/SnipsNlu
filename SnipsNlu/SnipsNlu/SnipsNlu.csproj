@@ -7,6 +7,12 @@
     <PackageTags>Snips NLU NLP Natural Language Understanding Processing</PackageTags>
     <Version>0.64.3</Version>
     <Platforms>AnyCPU;x64;x86</Platforms>
+    <Authors>BobLd</Authors>
+    <Company />
+    <Description>Snips NLU C# wrapper library to extract meaning from text.
+- https://snips.ai/
+- https://github.com/snipsco/snips-nlu</Description>
+    <PackageReleaseNotes>Beta version</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
