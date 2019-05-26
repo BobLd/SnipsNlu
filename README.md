@@ -98,7 +98,7 @@ Can you make 3 cups of coffee?
 TO DO list
 ----------
 - [x] Load model from zip file
-- [ ] Create `CStringArray` class
+- [ ] Implement `CStringArray` class
 - [ ] Implement `intentsWhitelist` and `intentsBlacklist` in `SnipsNLUEngine.Parse()`
 
 License
