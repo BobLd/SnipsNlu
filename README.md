@@ -10,7 +10,7 @@ References
 
 What is Snips NLU about ?
 -------------------------
-[From https://github.com/snipsco/snips-nlu]
+[From https://github.com/snipsco/snips-nlu/blob/develop/README.rst]
 
 Behind every chatbot and voice assistant lies a common piece of technology: Natural Language Understanding (NLU). Anytime a user interacts with an AI using natural language, their words need to be translated into a machine-readable description of what they meant.
 
