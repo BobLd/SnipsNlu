@@ -34,7 +34,7 @@ The pre-built DLL files are available in there respective directories.
 To build the dll, in `Cargo.toml` set `crate-type` to `["cdylib"]`. In `\.rustup\settings.toml`, it might be necessary to change `default_host_triple` to `i686-pc-windows-msvc` or to `x86_64-pc-windows-msvc`.
 
 To check if the necessary toolchains are installed, run `rustup toolchain list`.
-- x86 build  
+- __x86 build__  
   If necessary, run the following to install the toolchain:
   ```
   rustup install stable-i686-pc-windows-msvc
@@ -44,7 +44,7 @@ To check if the necessary toolchains are installed, run `rustup toolchain list`.
   cargo build --release --target=i686-pc-windows-msvc
   ```
 
-- x64 build
+- __x64 build__
   
   If necessary, run the following to install the toolchain:
   ```
