@@ -153,21 +153,6 @@ namespace SnipsNlu
          * https://github.com/snipsco/snips-nlu-rs/blob/develop/platforms/c/libsnips_nlu.h
          * https://github.com/snipsco/snips-nlu-rs/blob/develop/platforms/swift/SnipsNlu/SnipsNlu/NluEngine.swift
          */
-        /// <summary>
-        /// In 'Cargo.toml': crate-type = ["cdylib"]
-        /// <para>
-        /// For 64bit:
-        /// cargo build --release --target=x86_64-pc-windows-msvc
-        /// </para>
-        /// <para>
-        /// For 32 bit
-        /// https://www.reddit.com/r/rust/comments/78vpxg/help_cross_compiling_for_32_bit_on_windows/
-        /// rustup install stable-i686-pc-windows-msvc
-        /// rustup default stable-i686-pc-windows-msvc or 
-        /// [inC:\Users\boris\.rustup\settings.toml -> default_host_triple = "i686-pc-windows-msvc"]
-        /// cargo build --release --target=i686-pc-windows-msvc
-        /// </para>
-        /// </summary>
         internal static class NativeMethods
         {
             internal static bool Is64bit => IntPtr.Size == 8;

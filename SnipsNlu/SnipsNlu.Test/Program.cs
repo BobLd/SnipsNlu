@@ -16,23 +16,23 @@ namespace SnipsNlu.Test
 
             using (var snipsNLUEngine = SnipsNLUEngine.CreateFromZip(zipDir))
             {
-                var parsed = snipsNLUEngine.Parse(_sentence);
+                IntentParserResult parsed = snipsNLUEngine.Parse(_sentence);
                 Console.WriteLine(parsed);
             }
 
             using (var snipsNLUEngine = new SnipsNLUEngine(rootDir))
             {
-                var intents = snipsNLUEngine.GetIntents(_sentence);
-                var slots = snipsNLUEngine.GetSlots(_sentence, intents[0].IntentName);
-                var parsed = snipsNLUEngine.Parse(_sentence);
+                IntentClassifierResult[] intents = snipsNLUEngine.GetIntents(_sentence);
+                Slot[] slots = snipsNLUEngine.GetSlots(_sentence, intents[0].IntentName);
+                IntentParserResult parsed = snipsNLUEngine.Parse(_sentence);
                 Console.WriteLine(parsed);
             }
 
             using (var snipsNLUEngine = SnipsNLUEngine.CreateFromDirectory(rootDir))
             {
-                var intents = snipsNLUEngine.GetIntents(_sentence);
-                var slots = snipsNLUEngine.GetSlots(_sentence, intents[0].IntentName);
-                var parsed = snipsNLUEngine.Parse(_sentence);
+                IntentClassifierResult[] intents = snipsNLUEngine.GetIntents(_sentence);
+                Slot[] slots = snipsNLUEngine.GetSlots(_sentence, intents[0].IntentName);
+                IntentParserResult parsed = snipsNLUEngine.Parse(_sentence);
                 Console.WriteLine(parsed);
             }
 
